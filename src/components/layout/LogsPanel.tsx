@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { Terminal } from 'lucide-react';
 import { useCluster } from '../../context/ClusterContext';
 import { cn } from '../../utils/cn';

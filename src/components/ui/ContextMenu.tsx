@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Zap, Lock, HardDrive, Trash2, Terminal, FileText } from 'lucide-react';
 import { useCluster } from '../../context/ClusterContext';
-import { Node } from '../../types';
+
 
 export const ContextMenu = () => {
     const { 

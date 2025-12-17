@@ -1,8 +1,7 @@
-import React from 'react';
 import { Archive, Code, Trash2 } from 'lucide-react';
 import { useCluster } from '../../context/ClusterContext';
 import { StatusIndicator } from '../ui/StatusIndicator';
-import { Pod } from '../../types';
+import type { Pod } from '../../types';
 import { cn } from '../../utils/cn';
 
 // Helper for generating YAML (moved from App.tsx or just duplicated/imported)

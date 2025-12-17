@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Sidebar } from './components/layout/Sidebar';
 import { LogsPanel } from './components/layout/LogsPanel';
 import { ClusterMap } from './components/cluster/ClusterMap';

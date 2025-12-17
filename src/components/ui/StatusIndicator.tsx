@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const colors: Record<string, string> = {
   running: 'bg-green-500',

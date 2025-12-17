@@ -1,19 +1,18 @@
-import React, { useRef } from 'react';
-import { Globe, LayoutGrid, AlertTriangle } from 'lucide-react';
+import { useRef, type MouseEvent } from 'react';
+import { Globe, AlertTriangle } from 'lucide-react';
 import { useCluster } from '../../context/ClusterContext';
 import { NodeCard } from './NodeCard';
 
 export const ClusterMap = () => {
     const { 
         nodes, pods, activeNamespace, 
-        contextMenu, setContextMenu, 
+        setContextMenu, 
         setSelectedPod,
-        clusterLoad
     } = useCluster();
 
     const clusterRef = useRef<HTMLDivElement>(null);
 
-    const handleContextMenu = (e: React.MouseEvent, type: 'node' | 'pod', targetId: string, parentId?: string) => {
+    const handleContextMenu = (e: MouseEvent, type: 'node' | 'pod', targetId: string, parentId?: string) => {
         e.preventDefault();
         e.stopPropagation();
         setContextMenu({ x: e.clientX, y: e.clientY, type, targetId, parentId });
